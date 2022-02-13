@@ -9,5 +9,5 @@ command = "npm run release"
     # I really need to understand what's happening here better
     #Content-Security-Policy = "default-src 'self'; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com *.cloudfront.net *.jsdelivr.net 'unsafe-inline'; img-src * 'self' data:; script-src 'self' *.cloudfront.net;"
     X-XSS-Protection = "1; mode=block"
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "SAMEORIGIN"
     X-Content-Type-Options = "nosniff"
