@@ -1,0 +1,30 @@
+{
+  "name": "bananakingz.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "release": "webpack --mode=production",
+    "start": "npm run build && webpack-dev-server --open --mode development",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": "",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.3.0",
+    "eslint-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

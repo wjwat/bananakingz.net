@@ -1,0 +1,13 @@
+[build]
+base = "."
+publish = "./dist"
+command = "npm run release"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # I really need to understand what's happening here better
+    #Content-Security-Policy = "default-src 'self'; font-src fonts.gstatic.com; style-src 'self' fonts.googleapis.com *.cloudfront.net *.jsdelivr.net 'unsafe-inline'; img-src * 'self' data:; script-src 'self' *.cloudfront.net;"
+    X-XSS-Protection = "1; mode=block"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
