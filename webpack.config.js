@@ -19,21 +19,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'BananaKingz Homepage',
       template: './src/index.html',
-      inject: 'body'
+      inject: 'head'
     }),
     new HtmlWebpackPlugin({
       template: './src/modules/home/home.html',
-      inject: 'body',
+      inject: 'head',
       filename: "home/index.html"
     }),
     new HtmlWebpackPlugin({
       template: './src/modules/example/example.html',
-      inject: 'body',
+      inject: 'head',
       filename: "example/index.html"
     }),
     new HtmlWebpackPlugin({
       template: './src/modules/badexample/badexample.html',
-      inject: 'body',
+      inject: 'head',
       filename: "badexample/index.html"
     })
   ],
