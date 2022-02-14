@@ -35,7 +35,7 @@
 
 .about .developer-left img {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
   clear: both;
 }
 
@@ -47,7 +47,7 @@
 
 .about .developer-right img {
   float: right;
-  margin-left: 10px;
+  margin-left: 15px;
   clear: both;
 }
 
