@@ -27,16 +27,6 @@ module.exports = {
       filename: "home/index.html"
     }),
     new HtmlWebpackPlugin({
-      template: './src/modules/example/example.html',
-      inject: 'head',
-      filename: "example/index.html"
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/modules/badexample/badexample.html',
-      inject: 'head',
-      filename: "badexample/index.html"
-    }),
-    new HtmlWebpackPlugin({
       template: "./src/modules/quotes/quotes.html",
       inject: "head",
       filename: "quotes/index.html"
