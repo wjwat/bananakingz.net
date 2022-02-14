@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body class ="conversion">
+  <div class="container">
+    <header>
+      <h1>Banana conversion calculator</h1>
+    </header>
+    <form id="conversionForm" class="formbox">
+      <div class="form-group">
+        <label for="unit">UNIT OF MEASUREMENT</label>
+        <select class="form-control" name="music" id="unit">
+          <option value="inches">INCHES</option>
+          <option value="centimeters">CENTIMETERS</option>
+          <option value="pounds">POUNDS</option>
+          <option value="kilograms">KILOGRAMS</option>
+        </select>
+      </div>
+      <div>
+        <label for="amount">ENTER A MEASUREMENT</label>
+        <input type="number" step="0.01" id="input" class="form-control" min="0.01" onkeydown="return event.keyCode !== 69" required>
+      </div>
+      <button type="submit" class="btn btn-dark btn-lg btn-block">SUBMIT</button>
+    </form>
+    <h2 id="results"></h2>
+  </div>
+</body>
+</html>
