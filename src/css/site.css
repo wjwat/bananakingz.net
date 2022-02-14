@@ -1,20 +1,23 @@
 :root {
   --banana-leaf-dark: #439203;
   --banana-leaf-light: #DAF826;
-  --banana-leaf-med: #86BC02;
+  --banana-leaf-med: #f7fced;
 
   --banana-peel-too-ripe: #9c923d;
 
+  --background-banana: #f4f5cd;
+  --background-header-banana: #a3c88d;
+  --background-nav-banana: #e9e08b;
   --font-color-dark: #423e18;
 }
 
 body {
-  background-color: #f4f5cd;
+  background-color: var(--background-banana);
 }
 
 body > header {
   text-align: center;
-  background-color: #a3c88d;
+  background-color: var(--background-header-banana);
   border-bottom: 3px solid var(--banana-leaf-dark);
 }
 
@@ -45,7 +48,7 @@ iframe {
   flex-basis: 20%;
   flex-grow: 1;
   padding-top: 32px;
-  background-color: #e9e08b;
+  background-color: var(--background-nav-banana);
   border-right: 3px solid var(--banana-peel-too-ripe);
 }
 
@@ -57,6 +60,7 @@ iframe {
 }
 
 .navigation a:hover {
+  /* TODO change these to something not horrific */
   background-color: #f79c37;
   color: red;
 }
