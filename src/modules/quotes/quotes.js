@@ -2,7 +2,7 @@ import $ from 'jquery';
 import './quotes.css';
 
 const quoteWords = {
-  'banana': ['Dijkstra', 'language', 'program', 'programmer', 'programming', 'computer', 'whatever', 'genius', 'web', 'engineer', 'student'],
+  'banana': ['Dijkstra', 'recursion', 'language', 'program', 'programmer', 'programming', 'computer', 'whatever', 'genius', 'web', 'engineer', 'student'],
   'Banana': ['God'],
   'bananas': ['horses', 'programmers', 'projects', 'bugs', 'experts', 'machines'],
   'peels': ['brushes', 'lines'],
@@ -19,6 +19,10 @@ const fetchQuote = async () => {
   // const result = await response.json();
 
   return response.json();
+};
+
+const mangleAuthor = (author) => {
+  return author.replace(/a/g, 'ana');
 };
 
 const mangleQuote = (quote) => {
@@ -38,34 +42,17 @@ const displayQuote = () => {
   fetchQuote()
     .then(resp => {
       const mangled = mangleQuote(resp.en);
-      // const inStr = (e) => (mangled.indexOf(e) < 0);
+      const inStr = Object.keys(quoteWords).some(e => {
+        return mangled.indexOf(e) > -1;
+      });
 
-      console.log('=================================================');
-      console.log(Object.keys(quoteWords));
-      console.log(mangled);
+      if (!inStr) {
+        displayQuote();
+        return;
+      }
 
-      (Object.keys(quoteWords).some(e => {
-        if (mangled.indexOf(e) < 0) {
-          console.log('false');
-          return false;
-        } else {
-          console.log('true');
-          return true;
-        }
-      }))
-
-      // if (!(Object.keys(quoteWords).some(inStr))) {
-      //   console.log(mangled);
-      //   console.log('No bananas found in quote');
-      //   displayQuote();
-      //   return;
-      // }
-
-      // if (mangled.indexOf('banana') < 0) {
-        
-      // }
       $('.quotes #output').text(mangleQuote(resp.en));
-      $('.quotes #author').text(resp.author.replace(/a/g, 'ana'));
+      $('.quotes #author').text(mangleAuthor(resp.author));
     })
     .catch(err => {
       $('.quotes #output').text("Our staff of Banana Slammers are hard at work fixing the plumbing, try again later!");
