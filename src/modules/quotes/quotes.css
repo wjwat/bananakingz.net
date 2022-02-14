@@ -1,0 +1,21 @@
+.quotes blockquote {
+  border-left: 6px solid var(--banana-leaf-dark);
+  background-color: var(--banana-leaf-light);
+  font-size: 24px;
+}
+
+.quotes figcaption {
+  text-align: right;
+  font-size: 36px;
+}
+
+.quotes button {
+  font-size: 24px;
+  background-color: var(--banana-leaf-dark);
+  border: 2px solid var(--banana-leaf-light);
+  width: 25%;
+}
+
+.quotes .center {
+  text-align: center;
+}
