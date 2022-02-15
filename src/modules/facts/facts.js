@@ -15,7 +15,7 @@ const getFact = () => {
 
 $(() => {
   if ($('body').is('.facts')) {
-    $('.facts #fact-field').text(getFact);
+    getFact();
     $('.facts #get-fact').on('click', getFact);
   }
 });
