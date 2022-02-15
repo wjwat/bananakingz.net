@@ -27,6 +27,21 @@ module.exports = {
       filename: "home/index.html"
     }),
     new HtmlWebpackPlugin({
+      template: "./src/modules/quotes/quotes.html",
+      inject: "head",
+      filename: "quotes/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/about/about.html",
+      inject: "head",
+      filename: "about/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/jokes/jokes.html",
+      inject: "head",
+      filename: "jokes/index.html"
+    }),
+    new HtmlWebpackPlugin({
       template: './src/modules/conversion/conversion.html',
       inject: 'head',
       filename: "conversion/index.html"
@@ -45,7 +60,22 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader"
-      }
+      },
+      {
+        test: /\.(gif|png|jpe?g)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets/img/',
+        }
+      },
+      {
+        test: /\.html$/,
+        loader: "html-loader",
+        options: {
+          minimize: false
+        }
+      },
     ]
   }
 };

@@ -2,6 +2,7 @@
 
 - Add name of module in navigation sidebar in `./index.html`
 - Add new HtmlWebpackPlugin to `./webpack.config.js`
+- Add import of module .js to `src/index.js`
 
 # Be specific with your selectors
 
