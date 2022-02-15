@@ -14,8 +14,3 @@
   background-color: var(--banana-leaf-dark);
   border: 2px solid var(--banana-leaf-light);
 }
-
-.jokes {
-  width: 50rem;
-  margin: 0 auto;
-}

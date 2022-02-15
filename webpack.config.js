@@ -55,6 +55,11 @@ module.exports = {
       template: "./src/modules/bph/bph.html",
       inject: "head",
       filename: "bph/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/tictacbanana/tictacbanana.html",
+      inject: "head",
+      filename: "tictacbanana/index.html"
     })
   ],
   module: {
