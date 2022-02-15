@@ -13,8 +13,12 @@
   font-size: 24px;
   background-color: var(--banana-leaf-dark);
   border: 2px solid var(--banana-leaf-light);
-  width: 25%;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0 auto;
+}
+
+.quotes {
+  width: 50rem;
   margin: 0 auto;
 }

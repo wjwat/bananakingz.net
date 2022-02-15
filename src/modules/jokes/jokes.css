@@ -15,3 +15,8 @@
   border: 2px solid var(--banana-leaf-light);
   color: var(--font-color-dark);
 }
+
+.jokes {
+  width: 50rem;
+  margin: 0 auto;
+}

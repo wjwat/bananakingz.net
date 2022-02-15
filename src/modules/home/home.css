@@ -1,3 +1,8 @@
 .home h1 {
   text-align: center;
 }
+
+.home {
+  width: 50rem;
+  margin: 0 auto;
+}
