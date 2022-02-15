@@ -94,5 +94,7 @@ $(() => {
     registerBoardClicks();
   });
 
-  registerBoardClicks();
+  if ($('body').is('.tictacbanana')) {
+    registerBoardClicks();
+  }
 });
