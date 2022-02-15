@@ -16,8 +16,5 @@
   width: 25%;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.quotes .center {
-  text-align: center;
+  margin: 0 auto;
 }

@@ -35,6 +35,11 @@ module.exports = {
       template: "./src/modules/about/about.html",
       inject: "head",
       filename: "about/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/jokes/jokes.html",
+      inject: "head",
+      filename: "jokes/index.html"
     })
   ],
   module: {
