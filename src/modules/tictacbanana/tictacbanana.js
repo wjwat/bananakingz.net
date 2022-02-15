@@ -42,18 +42,19 @@ function markPosition(sel, player) {
 $(() => {
   function displayWinner() {
     let winner = tbbCurrentPlayer ? tbbP1 : tbbP2;
-    $('#bottom-display').text(winner + ' won!');
+    $('.tictacbanana #bottom-display').text(winner + ' won!');
     tbbWinningPlay.forEach(e => {
-      $('#' + e).addClass('display');
+      console.log(e);
+      $('.tictacbanana #' + e).addClass('tbbdisplay');
     });
   }
 
   function displayStalemate() {
-    $('#bottom-display').text('Nobody wins!');
+    $('.tictacbanana #bottom-display').text('Nobody wins!');
   }
 
   function updateCurrentMove() {
-    $('#bottom-display').text('Current Move: ' + (tbbCurrentPlayer ? tbbP1 : tbbP2));
+    $('.tictacbanana #bottom-display').text('Current Move: ' + (tbbCurrentPlayer ? tbbP1 : tbbP2));
   }
 
   function registerBoardClicks() {
@@ -86,7 +87,7 @@ $(() => {
 
     $('.tictacbanana div.space').each((i, e) => {
       $(e).text('');
-      $(e).removeClass('display');
+      $(e).removeClass('tbbdisplay');
     });
     $('.tictacbanana #bottom-display').text('');
 

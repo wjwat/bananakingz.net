@@ -1,8 +1,3 @@
-/* div.tictacbanana {
-  padding: 20px;
-  border: 1px solid red;
-} */
-
 .tictacbanana div.row {
   display: flex;
   justify-content: center;
@@ -11,22 +6,28 @@
   margin: 0 auto;
 }
 
-.tictacbanana div.row div.space {
-  border: 1px solid red;
+.tictacbanana .row .space {
+  display: flex;
   min-width: 100px;
   min-height: 100px;
-  display: inline-block;
-}
-
-.tictacbanana div.row div.space {
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 4rem;
+  background-color: var(--background-header-banana);
+  border-radius: 6px;
+  margin: 7px;
+}
+
+.tbbdisplay {
+  border: 5px solid red;
 }
 
 .tictacbanana #board {
-  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--banana-leaf-dark);
+  border: 5px solid #f1da02;
+  border-radius: 6px;
+  margin: 2rem auto;
 }
 
 .tictacbanana #p1, #p2 {
@@ -48,13 +49,4 @@
   align-self: center;
   width: 25%;
   text-transform: uppercase;
-}
-
-
-.tictacbanana .display {
-  background-color: red;
-}
-
-.tictacbanana .bananatictactoe {
-  color: red;
 }
