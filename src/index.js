@@ -8,6 +8,11 @@ import './modules/about/about.js';
 import './modules/conversion/UI.js';
 import './modules/facts/facts.js';
 
+require('./assets/img/3d-ban.gif');
+require('./assets/img/vert-spin.gif');
+require('./assets/img/3d-bun.gif');
+require('./assets/img/3d-rev-bun.gif');
+
 // Highlight which page we're currently on in the navigation sidebar.
 $(() => {
   $('.navigation a').on('click', e => {
