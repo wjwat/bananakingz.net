@@ -7,6 +7,7 @@ import './modules/jokes/jokes.js';
 import './modules/about/about.js';
 import './modules/conversion/UI.js';
 import './modules/facts/facts.js';
+import './modules/bph/bph.js';
 
 require('./assets/img/3d-ban.gif');
 require('./assets/img/vert-spin.gif');
