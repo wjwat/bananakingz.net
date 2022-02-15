@@ -15,7 +15,7 @@
   "scripts": {
     "build": "webpack --mode=development",
     "release": "webpack --mode=production",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build && webpack-dev-server --open --mode development",
     "netlify-dev": "npm run build && netlify dev",
     "lint": "eslint src/**/*.js"
   },

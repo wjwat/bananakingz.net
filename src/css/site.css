@@ -26,6 +26,10 @@ header > h1 {
   margin: .5rem 0 .5rem 0;
 }
 
+hr {
+  width: 50%;
+}
+
 iframe {
   height: 99%;
   width: 100%;
