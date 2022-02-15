@@ -9,6 +9,7 @@ import './modules/jokes/jokes.js';
 import './modules/about/about.js';
 import './modules/conversion/UI.js';
 import './modules/facts/facts.js';
+import './modules/bph/bph.js';
 import './modules/tictacbanana/tictacbanana.js';
 
 require('./assets/img/3d-bun.gif');
