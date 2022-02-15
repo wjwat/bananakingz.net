@@ -1,9 +1,11 @@
-import './facts-array.js';
 import './facts.css';
 import $ from 'jquery';
-
+let array = require('./facts-array.js');
 
 $(() => {
-$('.test').text(facts[0]);
+  const randomFact = (length) => {
+    return Math.floor(Math.random() * length);
+  }
+  $('.test').text(array.facts[randomFact(array.facts.length)]);
 });
 
