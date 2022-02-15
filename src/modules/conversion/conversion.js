@@ -4,21 +4,22 @@ export default class Banana {
   }
 
   bananaPounds() {
-    return this.bananas /= 0.2998287;
+    this.bananas = Math.round(this.bananas / 0.2998287);
+    return this.bananas;
   }
 
   bananaKilograms() {
-    return this.bananas /= 0.136;
+    this.bananas = Math.round(this.bananas / 0.1360);
+    return this.bananas;
   }
 
   bananaInches() {
-    return this.bananas /= 8.4999975;
+    this.bananas = Math.round(this.bananas / 8.4999975);
+    return this.bananas;
   }
 
   bananaCentimeters() {
-    return this.bananas /= 21.58999365;
+    this.bananas = Math.round(this.bananas / 21.58999365);
+    return this.bananas;
   }  
 }
-
-// banana length = 8.4999975 inches / 21.58999365 centimeters 
-// banana weight = 0.2998287 pounds / 0.136 kilograms

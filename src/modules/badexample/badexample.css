@@ -1,6 +1,0 @@
-/* This is a bad example because it will change every H1 on every page
- * regardless
- */
-h1 {
-  color: red;
-}

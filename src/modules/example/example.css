@@ -1,6 +1,0 @@
-/* This is a good example because it only applies to H1 in the example page
- * because we've namespaced it with <body class="example">
- */
-.example h1 {
-  color: green;
-}

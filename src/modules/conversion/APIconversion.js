@@ -12,6 +12,6 @@ export default class Random {
       };
       request.open("GET", url, true);
       request.send();
-    })
+    });
   }
 }
