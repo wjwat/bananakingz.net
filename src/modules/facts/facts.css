@@ -13,7 +13,6 @@
   margin: 0 auto;
   background-color: var(--banana-leaf-dark);
   border: 2px solid var(--banana-leaf-light);
-  color: var(--font-color-dark);
 }
 
 .facts {
