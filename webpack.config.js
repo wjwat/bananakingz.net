@@ -42,6 +42,11 @@ module.exports = {
       filename: "jokes/index.html"
     }),
     new HtmlWebpackPlugin({
+      template: './src/modules/conversion/conversion.html',
+      inject: 'head',
+      filename: "conversion/index.html"
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/modules/facts/facts.html",
       inject: "head",
       filename: "facts/index.html"
