@@ -8,13 +8,20 @@ const fetchJoke = async () => {
 };
 
 const formatJoke = (joke) => {
+  const headers = [
+    '🍌🍌🍌 Have you heard this one before? 🍌🍌🍌',
+    '🍌🧦 This one will knock your socks off!! 🧦🍌',
+    '🙈🙊🙉',
+    '👑🐒👑'
+  ];
   const br = '<br>';
-  const header = '🍌🍌🍌 Have you heard this one before? 🍌🍌🍌';
-  const footer = '😂😂🤣😂😂';
+  const header = headers[Math.floor(Math.random()*headers.length)];
+  const footer = '🙈😂🤣😂🐵💯';
 
-  const formattedJoke = header +
+  const formattedJoke =
+    header +
     br + br +
-    joke + br +
+    joke + br + br +
     footer;
 
   return formattedJoke;
@@ -31,7 +38,6 @@ export default function displayJoke() {
 $(() => {
   if ($('body').is('.jokes')) {
     displayJoke();
-    //$('.quotes #get-quote').on('click', displayQuote);
+    $('.jokes #get-joke').on('click', displayJoke);
   }
 });
-
