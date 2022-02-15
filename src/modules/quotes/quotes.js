@@ -38,7 +38,7 @@ const mangleQuote = (quote) => {
   return result;
 };
 
-const displayQuote = () => {
+export default function displayQuote() {
   fetchQuote()
     .then(resp => {
       const mangled = mangleQuote(resp.en);
@@ -58,7 +58,7 @@ const displayQuote = () => {
       $('.quotes #output').text("Our staff of Banana Slammers are hard at work fixing the plumbing, try again later!");
       $('.quotes #author').text(err);
     });
-};
+}
 
 $(() => {
   if ($('body').is('.quotes')) {

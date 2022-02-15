@@ -14,6 +14,8 @@
   background-color: var(--banana-leaf-dark);
   border: 2px solid var(--banana-leaf-light);
   width: 25%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .quotes .center {

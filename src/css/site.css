@@ -45,7 +45,7 @@ iframe {
 }
 
 .navigation {
-  flex-basis: 20%;
+  flex-basis: 15%;
   flex-grow: 1;
   padding-top: 32px;
   background-color: var(--background-nav-banana);
