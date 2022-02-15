@@ -73,5 +73,10 @@ iframe {
   height: 100%;
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 80%;
+  min-inline-size: 60%;
+}
+
+.about, .conversion, .facts, .home, .jokes, .quotes {
+  margin: 0 auto;
+  width: 50rem;
 }
