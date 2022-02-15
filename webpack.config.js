@@ -30,6 +30,11 @@ module.exports = {
       template: "./src/modules/quotes/quotes.html",
       inject: "head",
       filename: "quotes/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/about/about.html",
+      inject: "head",
+      filename: "about/index.html"
     })
   ],
   module: {
@@ -45,7 +50,22 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader"
-      }
+      },
+      {
+        test: /\.(gif|png|jpe?g)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets/img/',
+        }
+      },
+      {
+        test: /\.html$/,
+        loader: "html-loader",
+        options: {
+          minimize: false
+        }
+      },
     ]
   }
 };

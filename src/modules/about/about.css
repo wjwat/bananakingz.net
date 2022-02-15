@@ -1,0 +1,71 @@
+.about {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.about hr {
+  border: 1px solid var(--banana-leaf-med);
+  width: 75%;
+  margin: 2rem auto;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--banana-leaf-dark);
+}
+
+.about p {
+  font-size: 24px;
+}
+
+.about pre {
+  background-color: var(--background-banana);
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.about .developer-left img {
+  float: left;
+  margin-right: 15px;
+  clear: both;
+}
+
+.about .developer-left pre {
+  margin-left: 0px;
+  overflow: auto;
+  display: block;
+}
+
+.about .developer-right img {
+  float: right;
+  margin-left: 15px;
+  clear: both;
+}
+
+.about .developer-right pre {
+  text-align: right;
+  margin-right: 0px;
+  overflow: auto;
+  display: block;
+}
+.about a:link, .about a:visited {
+  color: var(--banana-leaf-dark);
+}
+
+.about a:hover {
+  background-color: var(---banana-peel-too-ripe);
+}
+
+.about .name {
+  font-weight: bold;
+  font-size: 32px;
+}
