@@ -1,0 +1,60 @@
+/* div.tictacbanana {
+  padding: 20px;
+  border: 1px solid red;
+} */
+
+.tictacbanana div.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.tictacbanana div.row div.space {
+  border: 1px solid red;
+  min-width: 100px;
+  min-height: 100px;
+  display: inline-block;
+}
+
+.tictacbanana div.row div.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.tictacbanana #board {
+  margin-top: 2rem;
+}
+
+.tictacbanana #p1, #p2 {
+  /* display: clear;
+  justify-content: clear;
+  align-items: clear;
+  margin: auto; */
+  padding: 0px;
+}
+
+.tictacbanana #bottom-display {
+  text-align: center;
+  font-size: 4rem;
+  height: 4.5rem;
+}
+
+.tictacbanana #reset {
+  margin-top: 2rem;
+  align-self: center;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+
+.tictacbanana .display {
+  background-color: red;
+}
+
+.tictacbanana .bananatictactoe {
+  color: red;
+}
