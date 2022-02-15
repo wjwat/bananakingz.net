@@ -23,12 +23,11 @@ $(() => {
     }
     return $("#results").html(`${input1.bananas} 🍌's`);
   });
-/* eslint-disable */
+  /* eslint-disable */
   $("#submit").click(function(){
     let promise = Random.getObject();
     promise.then(function(response){
       const body = JSON.parse(response);
-      console.log(Object.keys(body)[0]);
       let object = Object.keys(body);
       let weight = Math.round(body[object]["weight"]/0.00272);
       if (body[object].hasOwnProperty("length") === true) {
@@ -43,7 +42,8 @@ $(() => {
       } else {
         let diameter = Math.round(body[object]['diameter']/11.33333);
         diameterReturn(diameter);
-      } /* eslint-enable */
+      } 
+      /* eslint-enable */
 
       function lengthReturn(length){
         if (length < 1) {
