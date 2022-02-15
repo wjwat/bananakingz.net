@@ -50,3 +50,12 @@
   width: 25%;
   text-transform: uppercase;
 }
+
+.tictacbanana button {
+  font-size: 24px;
+  background-color: var(--banana-leaf-dark);
+  border: 2px solid var(--banana-leaf-light);
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto;
+}
