@@ -1,4 +1,4 @@
-const facts = [ 
+exports.facts = [ 
   "A bunch of bananas is called a hand; a single banana is called a finger.",
   "There are more than 1,000 varieties of bananas grown in over 150 countries.",
   "India is the world's biggest banana producer, followed by China.",
@@ -63,4 +63,4 @@ const facts = [
   "Slipping on banana peels became a comedic staple after banana peels were deemed a threat to public safety in the late 1800's.",
   "Banana flavoring is based off a compound found in all bananas called isoamyl acetate, unlike the myth that the flavoring was based off of a now-extinct species of bananas.",
   "Bananas don't grow on trees. They are actually giant herbs related to lillies and orchids."
-]
+];
