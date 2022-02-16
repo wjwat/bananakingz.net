@@ -97,6 +97,10 @@ $(() => {
             }
           }
         }
+
+        isSameHeight(player) {
+          return this.y >= player.y && this.y <= player.y + player.height;
+        }
       }
 
       p.setup = function() {
