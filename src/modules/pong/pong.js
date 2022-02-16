@@ -39,6 +39,14 @@ $(() => {
             this.y += 2;
           }
         }
+
+        update() {
+          if (this.isUp) {
+            this.up();
+          } else if (this.isDown) {
+            this.down();
+          }
+        }
       }
 
       class Ball {
@@ -86,11 +94,6 @@ $(() => {
         p.background(17, 150, 0);
         p.playerPaddle.display();
         p.aiPaddle.display();
-        if (p.playerPaddle.isUp) {
-          p.playerPaddle.up();
-        } else if (p.playerPaddle.isDown) {
-          p.playerPaddle.down();
-        }
         p.ball.update();
         p.ball.display();
       };
