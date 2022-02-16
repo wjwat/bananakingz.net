@@ -119,6 +119,8 @@ $(() => {
         p.processAI();
         p.ball.update();
         p.ball.display();
+        p.ball.hitPlayer(p.playerPaddle);
+        p.ball.hitAi(p.aiPaddle);
       };
 
       p.processAI = function() {
@@ -130,7 +132,7 @@ $(() => {
           p.aiPaddle.isDown = true;
           p.aiPaddle.isUp = false;
         }
-      }
+      };
       
       p.keyPressed = function() {
         if (p.keyCode === p.UP_ARROW) {
