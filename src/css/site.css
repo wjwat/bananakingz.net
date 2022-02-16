@@ -115,6 +115,13 @@ button {
   animation: textScroll 15s linear infinite;
 }
 
+.scroll p > span {
+  padding: 3px;
+  font-weight: bold;
+  background-color: var(--background-nav-banana);
+  border: 2px solid var(--banana-leaf-dark);
+}
+
 @media only screen and (min-width: 768px) {
   .scroll p {
     padding: 25px;
