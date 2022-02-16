@@ -80,7 +80,17 @@ $(() => {
         display() {
           p.fill(131, 70, 0);
           p.ellipse(this.x, this.y, this.r * 2, this.r * 2);
-        }       
+        }
+        
+        hitPlayer(player) {
+          if (this.x - this.r <= player.x + player.width && this.x > player.x) {
+            if (this.isSameHeight(player)) {
+              this.xSpeed = -this.xSpeed;
+            }
+          }
+        }
+
+        
       }
 
       p.setup = function() {
