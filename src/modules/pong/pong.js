@@ -21,6 +21,7 @@ $(() => {
           this.width = 20;
           this.isUp = false;
           this.isDown = false;
+          this.score = 0;
         }
     
         display() {
