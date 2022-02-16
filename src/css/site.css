@@ -41,6 +41,10 @@ body > footer {
   border-top: 3px solid var(--banana-leaf-dark);
 }
 
+body > footer a {
+  filter: drop-shadow(4px 4px #333);
+}
+
 header {
   height: 10rem;
   line-height: 10rem;
@@ -80,6 +84,19 @@ button {
   /* white-space: nowrap; */
   margin: 2rem auto;
   display: inline-block;
+  filter: drop-shadow(4px 4px #333);
+}
+
+blockquote {
+  border-left: 6px solid var(--banana-leaf-dark);
+  background-color: var(--banana-leaf-light);
+  font-size: 24px;
+  filter: drop-shadow(4px 4px #333);
+}
+
+figcaption {
+  text-align: right;
+  font-size: 36px;
 }
 
 .center {
@@ -127,6 +144,7 @@ button {
   transform: translateX(100%);
   -webkit-animation: textScroll 15s linear infinite;
   animation: textScroll 15s linear infinite;
+  filter: drop-shadow(4px 4px #333);
 }
 
 .scroll p > span {

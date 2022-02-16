@@ -28,6 +28,7 @@
   border: 5px solid #f1da02;
   border-radius: 6px;
   margin: 2rem auto;
+  filter: drop-shadow(4px 4px #333);
 }
 
 .tictacbanana #p1, #p2 {
