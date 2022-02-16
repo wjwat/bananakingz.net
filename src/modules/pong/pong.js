@@ -68,6 +68,10 @@ $(() => {
           }
           this.ySpeed = random(-3, 3);
         }
+        
+        display() {
+          ellipse(this.x, this.y, this.r * 2, this.r * 2);
+        }       
       }
 
       p.setup = function() {
