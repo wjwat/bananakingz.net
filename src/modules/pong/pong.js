@@ -57,6 +57,17 @@ $(() => {
           this.x += this.xSpeed;
           this.y += this.ySpeed;
         }
+
+        reset() {
+          this.x = 625 / 2;
+          this.y = 350 / 2;
+          this.xSpeed = random(3, 4);
+          let isLeft = random(1) > .5;
+          if (isLeft) {
+            this.xSpeed = -this.xSpeed;
+          }
+          this.ySpeed = random(-3, 3);
+        }
       }
 
       p.setup = function() {
