@@ -21,7 +21,6 @@ $(() => {
           this.width = 20;
           this.isUp = false;
           this.isDown = false;
-          this.score = 0;
         }
     
         display() {
@@ -48,12 +47,6 @@ $(() => {
             this.down();
           }
         }
-        
-        displayScore() {
-          p.textSize(50);
-          p.textAlign(CENTER);
-          p.text(this.score, this.x, 60);
-        }
       }
 
       class Ball {
@@ -62,11 +55,15 @@ $(() => {
           this.reset();
         }
 
-        update() {
+        update(playerScore, aiScore) {
           if (this.y < this.r || this.y > 350 - this.r) {
             this.ySpeed = -this.ySpeed;
           }
-          if (this.x < this.r || this.x > 625 + this.r) {
+          if (this.x < this.r) {
+            aiScore.increment();
+            this.reset();
+          } else if (this.x > 625 + this.r) {
+            playerScore.increment();
             this.reset();
           }
           this.x += this.xSpeed;
@@ -108,27 +105,19 @@ $(() => {
         isSameHeight(player) {
           return this.y >= player.y && this.y <= player.y + player.height;
         }
-
-        score(player, ai) {
-          if (this.x <= 0) {
-            ai.score += 1;
-          } else if (this.x >= 625) {
-            player.score += 1;
-          }
-        }
       }
 
-      function preload() {
-        imgBall = loadImage("../assets/img/vert-spin.gif");
-      }
+      p.preload = function() {
+        p.imgBall = p.loadImage("../assets/img/vert-spin.gif");
+      };
 
       p.setup = function() {
         p.createCanvas(625, 350);
         p.playerPaddle = new Paddle(26);
         p.aiPaddle = new Paddle(577);
         p.ball = new Ball();
-        spr = createSprite(60, 60); spr.scale = 0.5; spr.debug = true;
-        
+        //p.createImage(60, 60); p.spr.scale = 0.5; p.spr.debug = true;
+        //p.spr.addImage('ball', p.imgBall);
       };
 
       p.draw = function() {
@@ -145,6 +134,9 @@ $(() => {
         p.stroke(251, 255, 0);
         p.line(625/2, 0, 625/2, p.height);
         p.ball.score(p.playerPaddle, p.aiPaddle);
+        p.playerPaddle.displayScore();
+        p.aiPaddle.displayScore();
+        //p.drawSprites();
       };
 
       p.processAI = function() {
