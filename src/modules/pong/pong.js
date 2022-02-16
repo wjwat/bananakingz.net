@@ -118,6 +118,10 @@ $(() => {
           p.textAlign(p.CENTER);
           p.text(this.score, this.x, 60);
         }
+
+        increment() {
+          this.score++;
+        }
       }
 
       p.preload = function() {
