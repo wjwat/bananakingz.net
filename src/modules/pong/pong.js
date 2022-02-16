@@ -112,6 +112,12 @@ $(() => {
           this.x = x;
           this.score = 0;
         }
+
+        display() {
+          p.textSize(50);
+          p.textAlign(p.CENTER);
+          p.text(this.score, this.x, 60);
+        }
       }
 
       p.preload = function() {
