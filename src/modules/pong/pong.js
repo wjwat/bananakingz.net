@@ -121,6 +121,8 @@ $(() => {
         p.ball.display();
         p.ball.hitPlayer(p.playerPaddle);
         p.ball.hitAi(p.aiPaddle);
+        p.stroke(251, 255, 0);
+        p.line(625/2, 0, 625/2, p.height);
       };
 
       p.processAI = function() {
