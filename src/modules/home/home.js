@@ -6,5 +6,7 @@ import '../quotes/quotes.css';
 import './home.css';
 
 $(() => {
-  displayQuote();
+  if ($('body').is('.home')) {
+    displayQuote();
+  }
 });
