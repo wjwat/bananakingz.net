@@ -7,7 +7,7 @@ $(() => {
     const containerElement = document.getElementById('p5-container');
 
     const sketch = (p) => {
-      let x = 100;
+      let x = 10;
       let y = 100;
 
       p.setup = function() {
@@ -15,9 +15,9 @@ $(() => {
       };
 
       p.draw = function() {
-        p.background(0);
-        p.fill(255);
-        p.rect(x, y, 50, 50);
+        p.background(17, 150, 0);
+        p.fill(251, 255, 0);
+        p.rect(x, y, 10, 50);
       };
     };
 
