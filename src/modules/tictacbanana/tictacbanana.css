@@ -28,6 +28,7 @@
   border: 5px solid #f1da02;
   border-radius: 6px;
   margin: 2rem auto;
+  filter: drop-shadow(4px 4px #333);
 }
 
 .tictacbanana #p1, #p2 {
@@ -35,23 +36,11 @@
 }
 
 .tictacbanana #bottom-display {
+  margin: 0 auto;
+  padding: 5px 10px;
   text-align: center;
   font-size: 4rem;
-  height: 4.5rem;
-}
-
-.tictacbanana #reset {
-  margin-top: 2rem;
-  align-self: center;
-  width: 25%;
-  text-transform: uppercase;
-}
-
-.tictacbanana button {
-  font-size: 24px;
+  border: 5px solid #f1da02;
   background-color: var(--banana-leaf-dark);
-  border: 2px solid var(--banana-leaf-light);
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
+  filter: drop-shadow(4px 4px #333);
 }
