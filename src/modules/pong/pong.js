@@ -107,6 +107,13 @@ $(() => {
         }
       }
 
+      class Score {
+        constructor(x) {
+          this.x = x;
+          this.score = 0;
+        }
+      }
+
       p.preload = function() {
         p.imgBall = p.loadImage("../assets/img/vert-spin.gif");
       };
