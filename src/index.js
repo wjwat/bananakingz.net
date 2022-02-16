@@ -14,6 +14,7 @@ import './modules/tictacbanana/tictacbanana.js';
 
 require('./assets/img/3d-bun.gif');
 require('./assets/img/3d-rev-bun.gif');
+require('./assets/img/favicon.png');
 
 // Highlight which page we're currently on in the navigation sidebar.
 $(() => {
