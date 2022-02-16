@@ -47,7 +47,7 @@ $(() => {
           } else if (this.isDown) {
             this.down();
           }
-        }
+        }      
       }
 
       class Ball {
@@ -102,6 +102,19 @@ $(() => {
         isSameHeight(player) {
           return this.y >= player.y && this.y <= player.y + player.height;
         }
+
+        score(player, ai) {
+          if (this.x <= 0) {
+            ai.score += 1;
+          } else if (this.x >= 625) {
+            player.score += 1;
+          }
+        }
+      }
+
+      function preload() {
+        imgBall = loadImage("..");
+        imgExplode = loadImage('data/explode.png');
       }
 
       p.setup = function() {
@@ -109,6 +122,8 @@ $(() => {
         p.playerPaddle = new Paddle(26);
         p.aiPaddle = new Paddle(577);
         p.ball = new Ball();
+        spr = createSprite(60, 60); spr.scale = 0.5; spr.debug = true;
+        
       };
 
       p.draw = function() {
@@ -124,6 +139,7 @@ $(() => {
         p.ball.hitAi(p.aiPaddle);
         p.stroke(251, 255, 0);
         p.line(625/2, 0, 625/2, p.height);
+        p.ball.score(p.playerPaddle, p.aiPaddle);
       };
 
       p.processAI = function() {
