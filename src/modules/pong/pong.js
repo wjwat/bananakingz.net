@@ -41,6 +41,13 @@ $(() => {
         }
       }
 
+      class Ball {
+        constructor() {
+          this.r = 10;
+          this.reset();
+        }
+      }
+
       p.setup = function() {
         p.createCanvas(625, 350);
         p.playerPaddle = new Paddle(26);
