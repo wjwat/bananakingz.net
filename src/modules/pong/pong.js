@@ -94,6 +94,8 @@ $(() => {
         p.background(17, 150, 0);
         p.playerPaddle.display();
         p.aiPaddle.display();
+        p.playerPaddle.update();
+        p.aiPaddle.update();
         p.ball.update();
         p.ball.display();
       };
