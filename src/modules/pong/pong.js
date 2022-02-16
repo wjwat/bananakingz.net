@@ -90,6 +90,8 @@ $(() => {
         } else if (p.playerPaddle.isDown) {
           p.playerPaddle.down();
         }
+        p.ball.update();
+        p.ball.display();
       };
       
       p.keyPressed = function() {
