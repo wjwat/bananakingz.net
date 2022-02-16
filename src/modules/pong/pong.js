@@ -18,7 +18,7 @@ $(() => {
           this.x = x;
           this.y = 175;
           this.height = 80;
-          this.width = 20;
+          this.width = 15;
           this.isUp = false;
           this.isDown = false;
         }
@@ -30,13 +30,13 @@ $(() => {
 
         up() {
           if (this.y > 0) {
-            this.y -= 2;
+            this.y -= 3;
           }
         }
 
         down() {
           if (this.y < 350 - this.height) {
-            this.y += 2;
+            this.y += 3;
           }
         }
 
@@ -71,18 +71,18 @@ $(() => {
         }
 
         reset() {
-          this.x = 625 / 2;
-          this.y = 350 / 2;
-          this.xSpeed = p.random(3, 4);
+          this.x = 312;
+          this.y = 175;
+          this.xSpeed = p.random(4, 5);
           let isLeft = p.random(1) > .5;
           if (isLeft) {
             this.xSpeed = -this.xSpeed;
           }
-          this.ySpeed = p.random(-3, 3);
+          this.ySpeed = p.random(-2, 4);
         }
         
         display() {
-          p.fill(131, 70, 0);
+          p.fill(130, 90, 0);
           p.ellipse(this.x, this.y, this.r * 2, this.r * 2);
         }
         
@@ -124,17 +124,13 @@ $(() => {
         }
       }
 
-      p.preload = function() {
-        p.imgBall = p.loadImage("../assets/img/vert-spin.gif");
-      };
-
       p.setup = function() {
         p.createCanvas(625, 350);
         p.playerPaddle = new Paddle(26);
         p.aiPaddle = new Paddle(577);
         p.ball = new Ball();
-        //p.createImage(60, 60); p.spr.scale = 0.5; p.spr.debug = true;
-        //p.spr.addImage('ball', p.imgBall);
+        p.playerScore = new Score(272);
+        p.aiScore = new Score(352);
       };
 
       p.draw = function() {
@@ -144,16 +140,14 @@ $(() => {
         p.playerPaddle.update();
         p.aiPaddle.update();
         p.processAI();
-        p.ball.update();
+        p.ball.update(p.playerScore, p.aiScore);
         p.ball.display();
         p.ball.hitPlayer(p.playerPaddle);
         p.ball.hitAi(p.aiPaddle);
         p.stroke(251, 255, 0);
         p.line(625/2, 0, 625/2, p.height);
-        p.ball.score(p.playerPaddle, p.aiPaddle);
-        p.playerPaddle.displayScore();
-        p.aiPaddle.displayScore();
-        //p.drawSprites();
+        p.playerScore.display();
+        p.aiScore.display();
       };
 
       p.processAI = function() {
