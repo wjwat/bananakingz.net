@@ -51,7 +51,7 @@ export default function displayQuote() {
         return;
       }
 
-      $('.quotes #output').text(mangleQuote(resp.en));
+      $('.quotes #output').text('"' + mangleQuote(resp.en) + '"');
       $('.quotes #author').text(mangleAuthor(resp.author));
     })
     .catch(err => {
