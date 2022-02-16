@@ -8,6 +8,7 @@
   --background-banana: #f4f5cd;
   --background-header-banana: #a3c88d;
   --background-nav-banana: #e9e08b;
+
   --font-color-dark: #423e18;
 }
 
@@ -21,9 +22,23 @@ body > header {
   border-bottom: 3px solid var(--banana-leaf-dark);
 }
 
-header > h1 {
+body > footer {
+  background-color: var(--background-header-banana);
+  border-top: 3px solid var(--banana-leaf-dark);
+}
+
+header {
+  height: 10rem;
+  line-height: 10rem;
+}
+
+header > a, footer > div > a {
+  text-decoration: none;
+}
+
+header > a > h1 {
   font-size: 4rem;
-  margin: .5rem 0 .5rem 0;
+  margin: auto;
 }
 
 hr {
@@ -31,10 +46,30 @@ hr {
 }
 
 iframe {
-  height: 99%;
+  height: 100%;
   width: 100%;
   border: none;
-  padding: 0rem 1rem;
+}
+
+body > footer div {
+  display: block;
+}
+
+h4 {
+  margin-bottom: 3rem;
+}
+
+button {
+  font-size: 24px;
+  background-color: var(--banana-leaf-dark);
+  border: 2px solid var(--banana-leaf-light);
+  /* white-space: nowrap; */
+  margin: 2rem auto;
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
 }
 
 .active {
@@ -42,41 +77,64 @@ iframe {
   border-radius: 6px;
 }
 
-.wrapper {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.navigation {
-  flex-basis: 15rem;
-  flex-grow: 1;
-  padding-top: 32px;
-  background-color: var(--background-nav-banana);
-  border-right: 3px solid var(--banana-peel-too-ripe);
-}
-
-.navigation a {
-  padding: 8px 8px 8px 32px;
-  display: block;
-  font-size: 25px;
-  text-decoration: none;
-}
-
-.navigation a:hover {
-  /* TODO change these to something not horrific */
-  background-color: #f79c37;
-  color: red;
-}
-
 .main {
   height: 100%;
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 60%;
+  /* min-inline-size: 60%; */
 }
 
-.about, .conversion, .facts, .home, .jokes, .quotes {
+.about, .bph, .conversion, .facts, .home, .jokes, .quotes {
   margin: 0 auto;
-  width: 50rem;
+  max-width: 50rem;
+  padding: 1rem;
 }
+
+.back {
+  margin: 0 auto;
+}
+
+.scroll {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll p {
+  position: fixed;
+  bottom: 0px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 24px;
+  padding: 15px;
+  min-width: 1000px;
+  width: 100%;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation: textScroll 15s linear infinite;
+  animation: textScroll 15s linear infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .scroll p {
+    padding: 25px;
+    -webkit-animation: textScroll 15s linear infinite;
+    animation: textScroll 15s linear infinite;
+  }
+}
+
+@-webkit-keyframes textScroll {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }
+
+@keyframes textScroll {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); } }

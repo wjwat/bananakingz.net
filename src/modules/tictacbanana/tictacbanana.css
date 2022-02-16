@@ -39,19 +39,3 @@
   font-size: 4rem;
   height: 4.5rem;
 }
-
-.tictacbanana #reset {
-  margin-top: 2rem;
-  align-self: center;
-  width: 25%;
-  text-transform: uppercase;
-}
-
-.tictacbanana button {
-  font-size: 24px;
-  background-color: var(--banana-leaf-dark);
-  border: 2px solid var(--banana-leaf-light);
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
-}
