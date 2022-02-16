@@ -96,9 +96,21 @@ $(() => {
         p.aiPaddle.display();
         p.playerPaddle.update();
         p.aiPaddle.update();
+        p.processAI();
         p.ball.update();
         p.ball.display();
       };
+
+      p.processAI = function() {
+        let middleOfPaddle = p.aiPaddle.y + p.aiPaddle.height / 2;
+        if (middleOfPaddle > p.ball.y) {
+          p.aiPaddle.isUp = true;
+          p.aiPaddle.isDown = false;
+        } else {
+          p.aiPaddle.isDown = true;
+          p.aiPaddle.isUp = false;
+        }
+      }
       
       p.keyPressed = function() {
         if (p.keyCode === p.UP_ARROW) {
