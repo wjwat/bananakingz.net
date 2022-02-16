@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 :root {
   --banana-leaf-dark: #439203;
   --banana-leaf-light: #DAF826;
@@ -20,6 +22,18 @@ body > header {
   text-align: center;
   background-color: var(--background-header-banana);
   border-bottom: 3px solid var(--banana-leaf-dark);
+}
+
+body > header h1 {
+  background: linear-gradient(to bottom, #cfc09f 22%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Alfa Slab One';
+  position: relative;
+  text-transform: uppercase;	
+  margin: 0;
+  filter: drop-shadow(4px 4px #333);
 }
 
 body > footer {
