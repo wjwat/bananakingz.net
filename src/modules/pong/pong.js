@@ -6,21 +6,24 @@ $(() => {
   if ($('body').is('.pong')) {
     const containerElement = document.getElementById('p5-container');
 
-    const sketch = (p) => {
-      let x = 10;
-      let y = 100;
-
-      p.setup = function() {
-        p.createCanvas(624, 351);
+      setup = function() {
+        createCanvas(624, 351);
+        background(17, 150, 0);
       };
 
-      p.draw = function() {
-        p.background(17, 150, 0);
-        p.fill(251, 255, 0);
-        p.rect(x, y, 10, 50);
-      };
+      class Paddle {
+        constructor(x) {
+          this.x = x;
+          this.y = height / 2;
+          this.height = 80;
+          this.width = 20;
+        }
+          display() {
+            fill(251, 255, 0);
+            rect(this.x, this.y, this.width, this.height);
+          };
+      }
     };
 
     new p5(sketch, containerElement);
-  }
-});
+  });
