@@ -61,16 +61,16 @@ $(() => {
         reset() {
           this.x = 625 / 2;
           this.y = 350 / 2;
-          this.xSpeed = random(3, 4);
-          let isLeft = random(1) > .5;
+          this.xSpeed = p.random(3, 4);
+          let isLeft = p.random(1) > .5;
           if (isLeft) {
             this.xSpeed = -this.xSpeed;
           }
-          this.ySpeed = random(-3, 3);
+          this.ySpeed = p.random(-3, 3);
         }
         
         display() {
-          ellipse(this.x, this.y, this.r * 2, this.r * 2);
+          p.ellipse(this.x, this.y, this.r * 2, this.r * 2);
         }       
       }
 
@@ -78,6 +78,7 @@ $(() => {
         p.createCanvas(625, 350);
         p.playerPaddle = new Paddle(26);
         p.aiPaddle = new Paddle(577);
+        p.ball = new Ball();
       };
 
       p.draw = function() {
