@@ -47,7 +47,13 @@ $(() => {
           } else if (this.isDown) {
             this.down();
           }
-        }      
+        }
+        
+        displayScore() {
+          p.textSize(50);
+          p.textAlign(CENTER);
+          p.text(this.score, this.x, 60);
+        }
       }
 
       class Ball {
@@ -113,8 +119,7 @@ $(() => {
       }
 
       function preload() {
-        imgBall = loadImage("..");
-        imgExplode = loadImage('data/explode.png');
+        imgBall = loadImage("../assets/img/vert-spin.gif");
       }
 
       p.setup = function() {
