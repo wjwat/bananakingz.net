@@ -90,7 +90,13 @@ $(() => {
           }
         }
 
-        
+        hitAi(ai) {
+          if (this.x + this.r >= ai.x && this.x <= ai.x + ai.width) {
+            if (this.isSameHeight(ai)) {
+              this.xSpeed = -this.xSpeed;
+            }
+          }
+        }
       }
 
       p.setup = function() {
