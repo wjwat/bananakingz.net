@@ -29,11 +29,15 @@ $(() => {
         }
 
         up() {
-          this.y -= 2;
+          if (this.y > 0) {
+            this.y -= 2;
+          }
         }
 
         down() {
-          this.y += 2;
+          if (this.y < 350 - this.height) {
+            this.y += 2;
+          }
         }
       }
 
