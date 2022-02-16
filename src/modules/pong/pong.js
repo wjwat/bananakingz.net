@@ -46,6 +46,17 @@ $(() => {
           this.r = 10;
           this.reset();
         }
+
+        update() {
+          if (this.y < this.r || this.y > 350 - this.r) {
+            this.ySpeed = -this.ySpeed;
+          }
+          if (this.x < this.r || this.x > 625 + this.r) {
+            this.reset();
+          }
+          this.x += this.xSpeed;
+          this.y += this.ySpeed;
+        }
       }
 
       p.setup = function() {
