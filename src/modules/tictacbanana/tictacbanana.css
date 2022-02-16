@@ -36,7 +36,11 @@
 }
 
 .tictacbanana #bottom-display {
+  margin: 0 auto;
+  padding: 5px 10px;
   text-align: center;
   font-size: 4rem;
-  height: 4.5rem;
+  border: 5px solid #f1da02;
+  background-color: var(--banana-leaf-dark);
+  filter: drop-shadow(4px 4px #333);
 }

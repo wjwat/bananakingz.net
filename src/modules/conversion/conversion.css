@@ -1,0 +1,19 @@
+.conversion form {
+  border: 5px solid var(--banana-leaf-dark);
+  background-color: #f1da02;
+  filter: drop-shadow(4px 4px #333);  
+}
+
+.conversion h1, .conversion h3 {
+  margin: 0 auto;
+  padding: 5px 10px;
+  text-align: center;
+  /* font-size: 4rem; */
+  border: 5px solid #f1da02;
+  background-color: var(--banana-leaf-dark);
+  filter: drop-shadow(4px 4px #333);  
+}
+
+.conversion h3 {
+  margin-bottom: 1rem;
+}
