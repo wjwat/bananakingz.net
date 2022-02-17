@@ -1,8 +1,10 @@
 # 🍌 BANANAKINGZ.net 🍌
 
+<img src="src/assets/img/bananakingz.png">
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2de59ea0-4819-488c-bb65-66237ce7f86a/deploy-status)](https://app.netlify.com/sites/bananakingz-net/deploys)
 
-#### An extraordinary bananaganza of a website built in a modern JavaScript development environment
+#### An extraordinary bananaganza of a website built in a modern JavaScript dev environment
 
 ### Contributors
 
@@ -35,15 +37,17 @@
 * _CSS_
 
 ### Dependencies
-##### _This project was built using [Node.js v16.x] and utilizes the following dependencies:_
+##### _This project was built using [Node.js v16.x](https://nodejs.org/en/) and utilizes the following dependencies:_
 
-* _jQuery_
-* _Webpack_
-* _ESLint_
-* _p5.js_
-* _yacck.css_
+* _[jQuery](https://jquery.com/)_
+* _[Webpack](https://webpack.js.org/)_
+* _[ESLint](https://eslint.org/)_
+* _[p5.js](https://p5js.org/)_
+* _[yacck.css](https://github.com/sphars/yacck)_
 
 ## Setup/Installation Requirements
+
+You'll need the Node Package Manager (npm) to build the project. Make sure you have [Node JS](https://nodejs.org) installed
 
 1. _Clone repository from https://github.com/wjwat/bananakingz.net.git_
 2. _Navigate to the project directory in your terminal/command line_
@@ -52,7 +56,9 @@
 
 ## Live Link
 
-https://www.bananakingz.net/
+https://www.bananakingz.net/  
+
+* Hosted by [netlify](https://www.netlify.com/)
 
 ## Known Bugs
 
@@ -63,5 +69,3 @@ https://www.bananakingz.net/
 _MIT License_
 
 Copyright (c) _2022_ _Alex Adamovic_, _Will Watkins_, _Jase Seeley_, _Riley Shimp_, _Ryan Bass_
-
-## Contact Information
