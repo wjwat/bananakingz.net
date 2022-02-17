@@ -1,0 +1,70 @@
+.rpb .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.rpb #vs {
+  display:flex;justify-content:center;align-items:center;
+}
+
+.rpb #timer,
+.rpb div#computer,
+.rpb div#player-display,
+.rpb div#rock,
+.rpb div#paper,
+.rpb div#banana {
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
+  border: 3px solid yellow;
+  background-color: var(--background-header-banana);
+  font-size: 5rem;
+  text-align: center;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.rpb div#rock,
+.rpb div#paper,
+.rpb div#banana {
+  width: auto;
+  height: auto;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+}
+
+.rpb div#computer,
+.rpb div#player-display {
+  margin: auto 2rem;
+}
+
+.rpb #timer {
+  font-weight: bold;
+  color: red;
+}
+
+.rpb h3 {
+  margin: 1rem auto;
+  padding: 5px 20px;
+  width: 15rem;
+  text-align: center;
+  display: block;
+  background-color: red;
+  border: 3px solid green;
+  border-radius: 6px;
+}
+
+.rpb .selection {
+  border: 3px solid red;
+}
+
+.rpb #output {
+  text-align: center;
+  display: block;
+  background-color: red;
+}
