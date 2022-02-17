@@ -60,6 +60,11 @@ module.exports = {
       template: "./src/modules/tictacbanana/tictacbanana.html",
       inject: "head",
       filename: "tictacbanana/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/jump/jump.html",
+      inject: "head",
+      filename: "jump/index.html"
     })
   ],
   module: {
