@@ -1,9 +1,3 @@
-.facts blockquote {
-  border: 6px solid var(--banana-leaf-dark);
-  border-radius: 6px;
-  background-color: var(--banana-leaf-light);
-  font-size: 24px;
-  width: fit-content;
-  margin: 0 auto;
+.facts figure {
   text-align: center;
 }
