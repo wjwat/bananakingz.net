@@ -11,6 +11,7 @@ import './modules/conversion/UI.js';
 import './modules/facts/facts.js';
 import './modules/bph/bph.js';
 import './modules/tictacbanana/tictacbanana.js';
+import './modules/jump/jump.js';
 
 require('./assets/img/3d-bun.gif');
 require('./assets/img/3d-rev-bun.gif');
