@@ -28,6 +28,9 @@
 | Conversion | Users are able to enter a unit of measurement, a number of units, and then convert that measurment to its equivalent size or volume in bananas. Users are also treated to the banana equivalent of a random item called from the [wowthatsbig](https://wowthatsbig.net/) API when they submit |
 | BPH  | Convert a speed in miles per hour to bananas per hour  |
 | TicTacBanana | Play a friendly game of "tic tac toe" locally on your device. Banana vs. Kiwi. Who will win??? |
+| Jump Game | Jump over the kiwi as many times as you can. Test your high score! |
+| CLB | Play rock (coconut), paper (leaf), scissors (banana) against the computer |
+| Pong Banana | How much time do you have to waste? We dare you to try to beat our AI in a game of banana pong |
 | Meet the Kingz | Get to know the team behind bananakingz.net! |
 
 ## Major Technologies Used
