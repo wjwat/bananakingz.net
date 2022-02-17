@@ -100,21 +100,29 @@ button {
 }
 
 blockquote {
-  border-top: 3px solid var(--banana-leaf-dark);
-  border-left: 6px solid var(--banana-leaf-dark);
-  background-color: var(--banana-leaf-light);
+  all: initial;
+}
+
+blockquote, figcaption {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+blockquote {
   font-size: 24px;
-  filter: drop-shadow(4px 4px #333);
-  margin-bottom: 6px;
+  color: yellow;
+  margin: 1rem 0;
 }
 
 figcaption {
-  font-size: 36px;
-  padding: 0 10px;
-  border-radius: 10px;
+  font-size: 28px;
+  color: white;
+  text-align: right;
+}
+
+figure {
+  padding: 15px;
   border: 3px solid var(--banana-peel-too-ripe);
-  background-color: var(--background-banana);
-  float: right;
+  background: green;
   filter: drop-shadow(4px 4px #333);
 }
 
