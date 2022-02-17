@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import './pong.css';
 import p5 from 'p5';
 
 $(() => {
@@ -13,6 +12,7 @@ $(() => {
     }, false);
 
     const sketch = (p) => {
+      
       class Paddle {
         constructor(x) {
           this.x = x;
@@ -168,6 +168,7 @@ $(() => {
           p.playerPaddle.isDown = true;
         }
       };
+
       p.keyReleased = function() {
         if (p.keyCode === p.UP_ARROW) {
           p.playerPaddle.isUp = false;
