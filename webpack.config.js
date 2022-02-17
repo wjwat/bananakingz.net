@@ -70,6 +70,11 @@ module.exports = {
       template: "./src/modules/jump/jump.html",
       inject: "head",
       filename: "jump/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/rpb/rpb.html",
+      inject: "head",
+      filename: "rpb/index.html"
     })
   ],
   module: {

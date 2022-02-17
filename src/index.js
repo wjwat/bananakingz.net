@@ -13,6 +13,7 @@ import './modules/pong/pong.js';
 import './modules/bph/bph.js';
 import './modules/tictacbanana/tictacbanana.js';
 import './modules/jump/jump.js';
+import './modules/rpb/rpb.js';
 
 require('./assets/img/3d-bun.gif');
 require('./assets/img/3d-rev-bun.gif');
