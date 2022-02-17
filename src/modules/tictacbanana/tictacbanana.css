@@ -1,0 +1,46 @@
+.tictacbanana div.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.tictacbanana .row .space {
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: var(--background-header-banana);
+  border-radius: 6px;
+  margin: 7px;
+}
+
+.tbbdisplay {
+  border: 5px solid red;
+}
+
+.tictacbanana #board {
+  padding: 2rem;
+  background-color: var(--banana-leaf-dark);
+  border: 5px solid #f1da02;
+  border-radius: 6px;
+  margin: 2rem auto;
+  filter: drop-shadow(4px 4px #333);
+}
+
+.tictacbanana #p1, #p2 {
+  padding: 0px;
+}
+
+.tictacbanana #bottom-display {
+  margin: 0 auto;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 4rem;
+  border: 5px solid #f1da02;
+  background-color: var(--banana-leaf-dark);
+  filter: drop-shadow(4px 4px #333);
+}

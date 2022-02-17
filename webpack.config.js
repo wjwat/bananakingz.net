@@ -55,6 +55,21 @@ module.exports = {
       template: "./src/modules/pong/pong.html",
       inject: "head",
       filename: "pong/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/bph/bph.html",
+      inject: "head",
+      filename: "bph/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/tictacbanana/tictacbanana.html",
+      inject: "head",
+      filename: "tictacbanana/index.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/modules/jump/jump.html",
+      inject: "head",
+      filename: "jump/index.html"
     })
   ],
   module: {

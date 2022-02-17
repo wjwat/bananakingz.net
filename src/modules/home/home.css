@@ -1,8 +1,8 @@
 .home h1 {
   text-align: center;
+  color: rgb(196, 141, 0);
+  filter: drop-shadow(1px 1px green);
 }
-
-.home {
-  width: 50rem;
-  margin: 0 auto;
+.home h3 {
+  text-align: center;
 }
