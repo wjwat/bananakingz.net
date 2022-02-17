@@ -3,7 +3,11 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended", 
+    "p5js"
+  ],
+    
   "env": {
     "es6": true,
     "browser": true,

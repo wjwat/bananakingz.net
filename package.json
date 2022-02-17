@@ -26,6 +26,7 @@
     "css-loader": "^3.2.0",
     "dotenv-webpack": "^7.1.0",
     "eslint": "^6.3.0",
+    "eslint-config-p5js": "^1.1.0",
     "eslint-loader": "^3.0.0",
     "file-loader": "^1.1.6",
     "html-loader": "^1.0.0",
@@ -36,6 +37,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "p5": "^1.4.1"
   }
 }
