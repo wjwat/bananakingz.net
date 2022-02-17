@@ -19,26 +19,29 @@ const rpbSetPlayerSelection = (e) => {
     $('#' + rpbPlayerSelection).removeClass('selection');
   }
   $(e.target).addClass('selection');
-  $('#player-display').html(rpbDisplay[rpbPieces.indexOf(e.target.id)]);
+  $('#player').html(rpbDisplay[rpbPieces.indexOf(e.target.id)]);
   rpbPlayerSelection = e.target.id;
 };
 
 const rpbResetGame = () => {
-  userSels.off('click');
-  $(document).off('keyup');
+  userSels.off('click', rpbSetPlayerSelection);
+  $(document).off('keyup', rpbHandleKeyboard);
   if (rpbPlayerSelection) {
     $('#' + rpbPlayerSelection).removeClass('selection');
   }
   $('#timer').html('3');
   $('#computer').html('👿');
-  $('#player-display').html('🐵');
+  $('#player').html('🐵');
   $('#output').html('');
+  $('#output').hide();
   rpbPlayerSelection = '';
   seconds_left = 3;
+  console.log('reset');
 };
 
 const rpbStartGame = () => {
   rpbResetGame();
+  $('#start').off('click', rpbStartGame);
   userSels.on('click', rpbSetPlayerSelection);
   $(document).on('keyup', rpbHandleKeyboard);
   let rpbComputerSelection = Math.floor(Math.random() * 3);
@@ -51,6 +54,7 @@ const rpbStartGame = () => {
       $('#timer').html('0');
       $('#computer').html(rpbDisplay[rpbComputerSelection]);
       rpbCheckWinner(rpbPieces.indexOf(rpbPlayerSelection), rpbComputerSelection);
+      rpbAttachHandlers();
       return;
     }
     $('#timer').html(--seconds_left);
@@ -60,14 +64,17 @@ const rpbStartGame = () => {
 
 const rpbCheckWinner = (player, computer) => {
   const output = $('#output');
-  console.log(player, computer);
-  if (player === computer) {
+
+  if (player === -1) {
+    output.html('Player forfeit!');
+  } else if (player === computer) {
     output.html('TIE!');
   } else if (rpbWins.indexOf(`${player}:${computer}`) > -1) {
-    output.html('player won!');
+    output.html('Player Won!');
   } else {
-    output.html('computer won!');
+    output.html('Computer Won!');
   }
+  output.show();
 };
 
 const rpbAttachHandlers = () => {
