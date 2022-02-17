@@ -11,9 +11,8 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 }
 
-
 function rotateBanana() {
-  let degrees = getRandomIntInclusive(0, 180);
+  let degrees = getRandomIntInclusive(0, 270);
   let height = getRandomIntInclusive(5, 50);
 
   document.documentElement.style.setProperty('--bottom-percent', `${height}%`);
@@ -24,6 +23,6 @@ $(() => {
   if ($('body').is('.home')) {
     displayQuote();
 
-    setInterval(rotateBanana, 2000);
+    setInterval(rotateBanana, 1000);
   }
 });
