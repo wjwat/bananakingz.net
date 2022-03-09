@@ -17,63 +17,50 @@ module.exports = {
     // There should be a better way to load all these modules that doesn't
     // involve typing them out one by one, but I don't know it would be.
     new HtmlWebpackPlugin({
-      title: 'BananaKingz Homepage',
-      template: './src/index.html',
-      inject: 'head'
+      template: './src/index.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/modules/home/home.html',
-      inject: 'head',
       filename: "home/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/quotes/quotes.html",
-      inject: "head",
       filename: "quotes/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/about/about.html",
-      inject: "head",
       filename: "about/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/jokes/jokes.html",
-      inject: "head",
       filename: "jokes/index.html"
     }),
     new HtmlWebpackPlugin({
       template: './src/modules/conversion/conversion.html',
-      inject: 'head',
       filename: "conversion/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/facts/facts.html",
-      inject: "head",
       filename: "facts/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/pong/pong.html",
-      inject: "head",
       filename: "pong/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/bph/bph.html",
-      inject: "head",
       filename: "bph/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/tictacbanana/tictacbanana.html",
-      inject: "head",
       filename: "tictacbanana/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/jump/jump.html",
-      inject: "head",
       filename: "jump/index.html"
     }),
     new HtmlWebpackPlugin({
       template: "./src/modules/rpb/rpb.html",
-      inject: "head",
       filename: "rpb/index.html"
     })
   ],

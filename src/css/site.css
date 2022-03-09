@@ -256,6 +256,47 @@ a:hover {
   border: 2px solid var(--banana-leaf-dark);
 }
 
+@media screen and (max-width: 700px) {
+  header {
+    height: 5rem;
+    line-height: 5rem;
+  }
+  header > a > h1 {
+    font-size: 170%;
+  }
+  header > a > h1 > img {
+    max-height: 25px;
+  }
+  blockquote, figcaption {
+    font-size: 16px;
+  }
+  footer > div > a > h3 {
+    margin: 0 auto 15px;
+    font-size: 1rem;
+  }
+  footer > a > img {
+    max-height: 75%;
+  }
+  .banana-card {
+    min-width: 70%;
+  }
+  .banana-card h2 {
+    font-size: 125%;
+  }
+  .home h1, .home h3 {
+    font-size: 110%;
+  }
+  #big-banana {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header > a > h1 {
+    font-size: 130%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .scroll p {
     padding: 25px;
